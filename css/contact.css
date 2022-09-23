@@ -1,0 +1,12 @@
+.contactHeader{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    /* background-color: rgb(73, 15, 147); */
+    background-image: linear-gradient(#03063ce2,#03063cbd),url(../pics/group3.jpg);
+    background-position: center;
+    background-size: cover;}
