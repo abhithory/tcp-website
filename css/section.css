@@ -89,6 +89,7 @@
 }
 
 .card{
+    width: 18rem;
     background-color: white;
     border-radius: 1rem;
     position: relative;
@@ -101,7 +102,7 @@
     left: 0;
     height: 40%;
     width: 100%;
-    background-color: rgb(72, 0, 255);
+    background-color: var(--primaryblue);
     border-radius: 1rem 1rem 0 0;
 }
 
@@ -119,7 +120,7 @@
     width: 10rem;
     padding: .16rem;
     border-radius: 50%;
-    background-color: var(--primary);
+    background-color: var(--primaryblue);
 }
 .card > .card-content > .img > img{
     height: 100%;
@@ -146,6 +147,14 @@
 
 .card > .card-content >.social > i{
     margin: 0 .2rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primaryblue);
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: var(--primaryblue);
 }
 .swiper{
     width: 90%;

@@ -9,4 +9,96 @@
     /* background-color: rgb(73, 15, 147); */
     background-image: linear-gradient(#03063ce2,#03063cbd),url(../pics/group3.jpg);
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+}
+
+.section_form{
+    width: 100%;
+    margin: 4rem 0;
+}
+.contact-form{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:800px) {
+    .contact-form{
+        width: 80%;
+    }
+}
+
+.contact-form .inputFieldSet{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0;
+}
+
+.contact-form .inputFieldSet input[type='text']{
+    padding: .4rem .8rem;
+    border-radius: .6rem;
+    background-color:  white;
+    color: var(--primaryblue);
+}
+
+.contact-form .inputFieldSet input[type='text']:focus{
+    background-color:white;
+    color:  var(--primaryblue);
+}
+
+.contact-form .inputFieldSet textarea{
+    width: 100%;
+    height: 20vh;
+    padding: .4rem .8rem;
+    border-radius: .6rem;
+    background-color:  white;
+    color: var(--primaryblue);
+}
+
+
+.contact-form .inputFieldSet input[type='radio']::after{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+.contact-form .inputFieldSet  input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: var(--primaryblue);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.contact-form .inputFieldSet  select {
+    padding: .1rem .5rem;
+    background-color: var(--primaryblue);
+    color: var(--white);
+    border-radius: .4rem;
+}
+
+.contact-form .inputFieldSet  input[type='checkbox']:checked {
+    margin-right: .4rem;
+    background-color: var(--primaryblue);
+
+}
+
+

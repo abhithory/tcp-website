@@ -5,6 +5,7 @@
     /* --primary2: #ffffff; */
 
     --black:black;
+    --white:white;
 
 
     --bg:rgb(73, 15, 147);
@@ -177,6 +178,28 @@ footer .lni{
     background: var(--primaryblue);
     transition: 0.4s;
     border-radius: 1rem;
+}
+
+.btn-main-2{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--primaryblue);
+    border: 1px solid var(--primaryblue);
+    padding: 1.2rem 3.4rem;
+    font-size: 1.4rem;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 1rem;
+
+}
+
+.btn-main-2:hover{
+    border: 1px solid var(--primaryblue);
+    background: var(--primaryblue);
+    transition: 0.4s;
+    color: var(--white);
+
 }
 
 .btn-sub{

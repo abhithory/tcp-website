@@ -25,16 +25,16 @@
 
         <nav>
             <div class="logo">
-                <a href="#">
+                <a href="./index.html">
                     <img src="./pics/logo.png" alt="">
                 </a>
             </div>
             <i class="navTougleIcon lni lni-menu"></i>
             <ul data-visible="false" class="primary-nav">
-                <li><a href="#abouTCP">About Us</a></li>
-                <li><a href="#coreTeam">Core Team</a></li>
-                <li><a href="#followUs">Follow Us</a></li>
-                <li><a href="#">Past Events</a></li>
+                <li><a href="./index.html#abouTCP">About Us</a></li>
+                <li><a href="./index.html#coreTeam">Core Team</a></li>
+                <li><a href="./index.html#followUs">Follow Us</a></li>
+                <li><a href="./index.html#">Past Events</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -48,6 +48,70 @@
 
         </div>
     </section>
+
+    <section class="section_form">
+        <form class="contact-form" onsubmit="return submitUserForm(this);">
+
+            <div class="inputFieldSet">
+                <input type="text" id="name" placeholder="Your Name">
+            </div>
+            <div class="inputFieldSet">
+                <input type="text" id="subject" placeholder="Subject of Querie">
+            </div>
+
+            <div class="inputFieldSet">
+                <label for="gender">Your Geneder</label>
+                <div class="">
+                    <input type="radio" name="gender" id="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+                </div>
+            </div>
+
+            <div class="inputFieldSet">
+                <div>
+                    <label for="contacttype">Querie Type</label>
+                    <select name="contacttype" id="contacttype">
+                        <option value="fest">Fest</option>
+                        <option value="team">Team</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="inputFieldSet">
+                <label for="details"></label>
+                <textarea name="details" id="details" placeholder="Your message"></textarea>
+            </div>
+
+            <div class="inputFieldSet">
+                <div>
+                    <input type="checkbox" id="tad">Have you read all terms and conditions
+                </div>
+            </div>
+
+            <button class="btn-main-2" type="submit">
+                Submit
+            </button>
+
+
+        </form>
+    </section>
+
+
+    <script>
+        function submitUserForm(e) {
+
+            const confirmValue = confirm("Hello " + e.name.value + ". Are you want to submit the request?")
+
+            if (confirmValue) {
+                alert("Your request is submitted succefully.")
+            }
+
+            return confirmValue
+        };
+    </script>
+
 
     <footer>
         <p>Developed with <i class="lni lni-heart-filled"></i> by Abhishek</p>
